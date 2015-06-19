@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+	  <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>CSS Modularity</title>
+    <!-- <link rel="stylesheet" href="normalize.css"> -->
+    <link rel="stylesheet" href="framework.css">
+    <link rel="stylesheet" href="main.css">
+  </head>
+  <body>
+  	<nav class="nav">
+  		<ul>
+  		  			<li><a href="#">Home</a></li>
+  		  			<li><a href="#">About Us</a></li>
+  		  			<li><a href="#">Catalog</a></li>
+  		  			<li><a href="#">Blog</a></li>
+  		  			<li><a href="#">Contact</a></li>
+   		</ul>
+  	</nav>
+  		<img src="http://placehold.it/960x200" class="hero-img">
+  		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris et fermentum eros. Curabitur interdum libero vel dolor pretium accumsan. Praesent sit amet mi ac dolor gravida dignissim vitae ut velit. Morbi non ex tellus. Nam auctor neque a sodales fermentum. Nunc dignissim bibendum libero sed eleifend. Donec congue lorem sit amet mattis ultrices. Quisque condimentum lacinia accumsan. Sed blandit arcu ex, ac dapibus magna consequat quis. Vestibulum sit amet ante non ligula aliquam tempus in id justo. Curabitur congue lacinia nunc, id sodales quam iaculis vel. Integer pellentesque libero nisl, nec convallis lectus volutpat vitae. Cras at odio ex. Proin at ipsum venenatis, interdum ex eu, lobortis lectus. Donec semper sit amet nisi sed tempor.</p>
+
+      <!-- Columns using "display:inline-block" - This section doesn't work correctly with line breaks between the end of one column div and the next... The positive is that vertical centering works correctly... It's much more difficult to center vertically using float for the columns. -->
+  		<div class="gallery">
+      <div class="gallery-col">
+      <img src="http://placehold.it/200x150"></div><div class="gallery-col">
+      <img src="http://placehold.it/300x150"></div><div class="gallery-col">
+      <img src="http://placehold.it/200x300"></div><div class="gallery-col">
+      <img src="http://placehold.it/200x150"></div></div>
+      <!-- End inline-block column section -->
+    
+    <!-- Columns using "overflow:hidden" on a parent container then floating column containers. This one is nice because everything is top justified so it works nicely with text columns. -->
+    <div class="three-column-container">
+      <div class="content-col">
+        <h2>Column 1</h2>
+        <p>Pellentesque velit orci, tincidunt nec nisl vel, sagittis facilisis velit. Duis tempor velit massa, sed vehicula ipsum vulputate a. Praesent elementum, leo sed luctus dignissim, nisl nulla vulputate elit, eget volutpat ex ligula id mauris. Vivamus id commodo lacus. Etiam efficitur elit non molestie consectetur. Proin nec tincidunt neque. Curabitur et lectus laoreet, porttitor quam vitae, imperdiet lorem. Suspendisse potenti. Donec sit amet eleifend dolor.</p>
+        <p>Pellentesque velit orci, tincidunt nec nisl vel, sagittis facilisis velit. Duis tempor velit massa, sed vehicula ipsum vulputate a. Praesent elementum, leo sed luctus dignissim, nisl nulla vulputate elit, eget volutpat ex ligula id mauris. Vivamus id commodo lacus. Etiam efficitur elit non molestie consectetur. Proin nec tincidunt neque. Curabitur et lectus laoreet, porttitor quam vitae, imperdiet lorem. Suspendisse potenti. Donec sit amet eleifend dolor.</p>
+      </div>
+      <div class="content-col">
+        <h2>Column 2</h2>
+        <p>Nunc felis eros, rhoncus nec pulvinar sit amet, venenatis eget orci. Sed vel pharetra tellus. Proin hendrerit sem nisl, eu aliquet lacus placerat nec. Donec fringilla non ante a ultrices. Nunc at mi purus. Sed facilisis auctor nisi eu interdum. Proin sit amet elit lacinia, finibus augue gravida, ultrices dui. Fusce venenatis, velit id gravida tempus, purus enim ornare lorem, ut dignissim ex nibh ac neque. Ut velit sapien, varius quis mauris id, fringilla pretium ipsum. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum omnis, deserunt aspernatur unde iusto! Id fugit explicabo, a in corrupti!</p></div>
+      <div class="content-col">
+        <h2>Column 3</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi delectus dolor eligendi. Ipsum quas voluptate, pariatur iure. Enim accusamus soluta iure ab laudantium magnam? Temporibus laborum officia quos. Et delectus fuga laboriosam illo sint. Mollitia ratione deserunt blanditiis rerum animi odio, ipsam suscipit! Asperiores iste ab a doloribus ducimus nostrum voluptas ut optio tenetur, cupiditate praesentium nam, iusto repudiandae et laboriosam dolore rerum porro velit reprehenderit quod officia quasi. Consectetur quasi numquam sed ullam aliquid unde fugiat, suscipit ut autem perspiciatis corrupti saepe! Unde ullam fugit porro vel officiis quaerat delectus, laborum iure sit. Pariatur error necessitatibus architecto perspiciatis, culpa.</p>
+      </div>
+    </div>
+    <!-- End of "overflow:hidden" column container example. -->
+  </body>
+</html>
